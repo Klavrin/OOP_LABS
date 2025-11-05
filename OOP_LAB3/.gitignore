@@ -1,0 +1,30 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Eclipse/IDE files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Maven target directory
+target/
+
+# Local Maven repository (optional, usually huge)
+# .m2/repository/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Lab output dir
+/src/main/java/lab/output
