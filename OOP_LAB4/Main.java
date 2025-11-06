@@ -28,16 +28,27 @@ public class Main {
       return;
     }
 
-    String filePath = args[0];
+    // String filePath = args[0];
 
     var fr = new FileReader();
     // System.out.println(fr.readFileIntoString(filePath));
 
-    var td = new TextData("hello.txt", fr.readFileIntoString(filePath));
-    System.out.println("File name: " + td.getFilename());
-    System.out.println("Number of vowels: " + td.getNumberOfVowels());
-    System.out.println("Number of consonants: " + td.getNumberOfConsonants());
-    System.out.println("Number of letters: " + td.getNumberOfLetters());
-    System.out.println("Number of sentences: " + td.getNumberOfSentences());
+    // var td = new TextData("hello.txt", fr.readFileIntoString(filePath));
+    // System.out.println("File name: " + td.getFilename());
+    // System.out.println("Number of vowels: " + td.getNumberOfVowels());
+    // System.out.println("Number of consonants: " + td.getNumberOfConsonants());
+    // System.out.println("Number of letters: " + td.getNumberOfLetters());
+    // System.out.println("Number of sentences: " + td.getNumberOfSentences());
+
+    for (String filePath: args) {
+      String content = fr.readFileIntoString(filePath);
+
+      if (content != null) {
+          var td = new TextData(filePath, content);
+          System.out.println(td.getText());
+      } else {
+          System.out.println("Skipping file (empty): " + filePath);
+      }
+  }
   } 
 }
