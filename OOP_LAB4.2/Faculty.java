@@ -24,4 +24,16 @@ public class Faculty implements Serializable {
   public String getAbbreviation() { return abbreviation; }
   public List<Student> getStudents() { return students; }
   public StudyField getStudyField() { return studyField; }
+
+  public void addStudent(Student student) {
+    students.add(student);
+  }
+
+  public void removeStudent(Student student) {
+    students.remove(student);
+  }
+
+  public boolean hasStudent(Student student) {
+    return students.contains(student);
+  }
 }
