@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 import java.io.Serializable;
 
 public class Student implements Serializable {
@@ -28,4 +29,25 @@ public class Student implements Serializable {
   public String getEmail() { return email; }
   public LocalDate getEnrollmentDate() { return enrollmentDate; }
   public LocalDate getDateOfBirth() { return dateOfBirth; }
+
+  public boolean hasEmail(String email) {
+    return this.email.equalsIgnoreCase(email);
+  }
+
+  public int getAge() {
+    return Period.between(dateOfBirth, LocalDate.now()).getYears();
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Student)) return false;
+    Student s = (Student) o;
+    return email.equalsIgnoreCase(s.email);
+  }
+
+  @Override
+  public int hashCode() {
+    return email.toLowerCase().hashCode();
+  }
 }
