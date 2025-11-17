@@ -36,4 +36,17 @@ public class Faculty implements Serializable {
   public boolean hasStudent(Student student) {
     return students.contains(student);
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Faculty)) return false;
+    Faculty f = (Faculty) o;
+    return abbreviation.equalsIgnoreCase(f.abbreviation);
+  }
+
+  @Override
+  public int hashCode() {
+    return abbreviation.toLowerCase().hashCode();
+  }
 }
