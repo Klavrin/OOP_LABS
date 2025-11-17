@@ -1,6 +1,8 @@
 import java.util.List;
+import java.io.Serializable;
 
-public class Faculty {
+public class Faculty implements Serializable {
+  private static final long serialVersionUID = 1L;
   private final String name;
   private final String abbreviation;
   private final List<Student> students;
