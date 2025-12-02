@@ -10,6 +10,10 @@ public class Cappuccino extends Coffee {
     return mlOfMilk;
   }
 
+  public void setMlOfMilk(int mlOfMilk) {
+    this.mlOfMilk = mlOfMilk;
+  }
+
   @Override
   public void printCoffeeDetails() {
     super.printCoffeeDetails();
