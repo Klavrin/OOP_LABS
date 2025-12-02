@@ -1,5 +1,7 @@
 public class Main {
   static public void main(String[] args) {
-    System.out.println("Hello world!");
+    var americano = new Americano(Intensity.NORMAL, 150);
+
+    americano.printCoffeeDetails();
   }
 }
