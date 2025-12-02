@@ -1,6 +1,6 @@
 public class Coffee {
-  Intensity intensity;
-  String name = "Coffee";
+  private Intensity intensity;
+  private String name = "Coffee";
 
   public Coffee(Intensity intensity, String name) {
     this.intensity = intensity;

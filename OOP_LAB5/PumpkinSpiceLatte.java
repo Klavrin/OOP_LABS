@@ -1,6 +1,6 @@
 public class PumpkinSpiceLatte extends Coffee {
-  int mlOfMilk;
-  int mlOfPumpkingSpice;
+  private int mlOfMilk;
+  private int mlOfPumpkingSpice;
 
   public PumpkinSpiceLatte(Intensity intensity, int mlOfMilk, int mlOfPumpkingSpice) {
     super(intensity, "Pumpkin Spice Latte");

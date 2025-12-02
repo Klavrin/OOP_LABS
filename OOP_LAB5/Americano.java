@@ -1,5 +1,5 @@
 public class Americano extends Coffee {
-  int mlOfWater;
+  private int mlOfWater;
 
   public Americano(Intensity intensity, int mlOfWater) {
     super(intensity, "Americano");

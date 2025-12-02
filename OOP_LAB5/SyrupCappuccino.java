@@ -1,6 +1,6 @@
 public class SyrupCappuccino extends Coffee {
-  int mlOfMilk;
-  SyrupType syrup;
+  private int mlOfMilk;
+  private SyrupType syrup;
 
   public SyrupCappuccino(Intensity intensity, int mlOfMilk, SyrupType syrup) {
     super(intensity, "Syrup Cappuccino");

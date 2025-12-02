@@ -1,5 +1,5 @@
 public class Person {
-  String name;
+  private String name;
   // String preferredCoffee;
   // Intensity preferrenedIntensity;
 

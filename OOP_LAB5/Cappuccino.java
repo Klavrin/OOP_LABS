@@ -1,5 +1,5 @@
 public class Cappuccino extends Coffee {
-  int mlOfMilk;
+  private int mlOfMilk;
 
   public Cappuccino(Intensity intensity, int mlOfMilk) {
     super(intensity, "Cappuccino");
