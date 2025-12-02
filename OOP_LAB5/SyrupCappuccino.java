@@ -16,6 +16,14 @@ public class SyrupCappuccino extends Coffee {
     return syrup;
   }
 
+  public void setMlOfMilk(int mlOfMilk) {
+    this.mlOfMilk = mlOfMilk;
+  }
+
+  public void setSyrup(SyrupType syrup) {
+    this.syrup = syrup;
+  }
+
   @Override
   public void printCoffeeDetails() {
     super.printCoffeeDetails();
