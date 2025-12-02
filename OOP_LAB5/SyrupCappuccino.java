@@ -15,4 +15,11 @@ public class SyrupCappuccino extends Coffee {
   public SyrupType getSyrup() {
     return syrup;
   }
+
+  @Override
+  public void printCoffeeDetails() {
+    super.printCoffeeDetails();
+    System.out.println("Milk: " + mlOfMilk + "ml");
+    System.out.println("Syrup type: " + syrup);
+  }
 }
