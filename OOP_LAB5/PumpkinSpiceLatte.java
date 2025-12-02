@@ -16,6 +16,14 @@ public class PumpkinSpiceLatte extends Coffee {
     return mlOfPumpkingSpice;
   }
 
+  public void setMlOfMilk(int mlOfMilk) {
+    this.mlOfMilk = mlOfMilk;
+  }
+
+  public void setMlOfPumpkingSpice(int mlOfPumpkingSpice) {
+    this.mlOfPumpkingSpice = mlOfPumpkingSpice;
+  }
+
   @Override
   public void printCoffeeDetails() {
     super.printCoffeeDetails();
