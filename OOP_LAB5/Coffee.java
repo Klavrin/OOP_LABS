@@ -15,6 +15,10 @@ public class Coffee {
     return name;
   }
 
+  public void setIntensity(Intensity intensity) {
+    this.intensity = intensity;
+  }
+
   public void printCoffeeDetails() {
     System.out.println(name + ":");
     System.out.println("Coffee intensity: " + intensity);
