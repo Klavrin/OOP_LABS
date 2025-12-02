@@ -22,4 +22,10 @@ public class PumpkinSpiceLatte extends Coffee {
     System.out.println("Milk: " + mlOfMilk + "ml");
     System.out.println("Pumpkin spice: " + mlOfPumpkingSpice + "ml");
   }
+
+  public void makePumpkinSpiceLatte() {
+    super.makeCoffee();
+    System.out.println("Adding " + mlOfMilk + "mls of milk");
+    System.out.println("Adding " + mlOfPumpkingSpice + "mls of pumpkin spice");
+  }
 }
