@@ -16,7 +16,12 @@ public class Coffee {
   }
 
   public void printCoffeeDetails() {
-    System.out.println("Making " + name);
+    System.out.println(name + ":");
     System.out.println("Coffee intensity: " + intensity);
+  }
+
+  public void makeCoffee() {
+    System.out.println("Making " + name);
+    System.out.println("Intensity set to " + intensity);
   }
 }
