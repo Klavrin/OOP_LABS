@@ -9,7 +9,7 @@ public class Barista extends Person {
     this.listOfCoffees = listOCoffees;
   }
 
-  public void prepareCoffee(String coffeeName) {
+  public void prepareCoffee() {
     for (Coffee coffee : listOfCoffees) {
       Scanner myObj = new Scanner(System.in);
 
