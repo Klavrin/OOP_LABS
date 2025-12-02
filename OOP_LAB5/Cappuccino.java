@@ -9,4 +9,10 @@ public class Cappuccino extends Coffee {
   public int getMlOfMilk() {
     return mlOfMilk;
   }
+
+  @Override
+  public void printCoffeeDetails() {
+    super.printCoffeeDetails();
+    System.out.println("Milk: " + mlOfMilk + "ml");
+  }
 }
