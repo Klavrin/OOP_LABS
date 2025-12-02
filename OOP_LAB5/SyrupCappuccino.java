@@ -22,4 +22,10 @@ public class SyrupCappuccino extends Coffee {
     System.out.println("Milk: " + mlOfMilk + "ml");
     System.out.println("Syrup type: " + syrup);
   }
+
+  public void makeSyrupCappuccino() {
+    super.makeCoffee();
+    System.out.println("Adding " + mlOfMilk + "mls of milk");
+    System.out.println("Adding  " + syrup + "mls of syrup");
+  }
 }
