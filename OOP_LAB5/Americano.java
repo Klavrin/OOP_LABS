@@ -15,4 +15,9 @@ public class Americano extends Coffee {
     super.printCoffeeDetails();
     System.out.println("Water: " + mlOfWater + " ml");
   }
+
+  public void makeAmericano() {
+    super.makeCoffee();
+    System.out.println("Adding " + mlOfWater + "mls of water");
+  }
 }
