@@ -1,0 +1,6 @@
+from abc import ABC, abstractmethod
+
+class Refuelable(ABC):
+  @abstractmethod
+  def refuel(carId):
+    pass
